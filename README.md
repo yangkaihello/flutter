@@ -1,16 +1,5 @@
-# application
+# flutter 项目需要工具 
 
-A new Flutter project.
+1.[通过命令行方式把json转换成对应语言dart 对象 通过quicktype命令执行,可以集成到项目命令中](https://github.com/quicktype/quicktype)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

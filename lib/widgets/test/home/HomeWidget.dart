@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:application/widgets/home/HomeController.dart';
+import 'package:application/widgets/test/home/HomeController.dart';
 
 // ignore: must_be_immutable
 class HomeWidget extends StatelessWidget {
