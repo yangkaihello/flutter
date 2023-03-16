@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, prefer_const_constructors, must_be_immutable, avoid_web_libraries_in_flutter
 
 import 'package:application/l10n/Translation.dart';
+import 'package:application/widgets/test/home/HomeWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -18,6 +19,7 @@ class LanguageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Get.rootController;
     return Scaffold(
       appBar: AppBar(
         title: Text("Internationalization"),
@@ -38,6 +40,16 @@ class LanguageWidget extends StatelessWidget {
             ElevatedButton(
                 onPressed: () => messagesController.changeLanguage('en', "US"),
                 child: Text("切换到英文")),
+            ElevatedButton(
+                onPressed: () =>
+                    Get.offAllNamed('/?test[a]=1', arguments: ['params']),
+                child: Text("go to home")),
+            ElevatedButton(
+                onPressed: () => Get.toNamed('/'),
+                child: Text("go to  not arguments")),
+            ElevatedButton(
+                onPressed: () => Get.offNamed('/'),
+                child: Text("go to home not back")),
           ],
         ),
       ),

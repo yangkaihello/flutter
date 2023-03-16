@@ -1,11 +1,13 @@
 // ignore_for_file: file_names, prefer_const_constructors
 
+import 'package:application/abstracts/BaseWidget.dart';
+import 'package:application/widgets/test/language/LanguageWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:application/widgets/test/home/HomeController.dart';
 
 // ignore: must_be_immutable
-class HomeWidget extends StatelessWidget {
+class HomeWidget extends StatelessWidget implements BaseWidget {
   HomeController countController = Get.put(HomeController());
 
   HomeWidget({super.key});
@@ -46,7 +48,13 @@ class HomeWidget extends StatelessWidget {
                 child: Text("增加")),
             ElevatedButton(
                 onPressed: () => countController.incrementNotName(),
-                child: Text("增加"))
+                child: Text("增加")),
+            ElevatedButton(
+                onPressed: () => Get.toNamed("/language"),
+                child: Text("go to language")),
+            ElevatedButton(
+                onPressed: () => Get.toNamed("/language"),
+                child: Text("go to language not back")),
           ],
         ),
       ),
